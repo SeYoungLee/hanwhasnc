@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dice" class="examples.Dice">
+		<property name="face" value="16"></property>
+	</bean>
+	
+	<bean id="player" class="examples.Player">
+		<property name="name" value="urstory"></property>
+		<property name="dice" ref="dice"></property>
+	</bean>
+ </beans>
